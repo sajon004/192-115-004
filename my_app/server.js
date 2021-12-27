@@ -19,13 +19,13 @@ app.use(bodyparser.urlencoded({extended:true}))
 app.set("view engine","ejs")
 //app.set("views",path.resolve(__dirname,"views/ejs"))
 
-//load assests
+//load assets
 app.use('/css',express.static(path.resolve(__dirname,"assets/css")))
 app.use('/img',express.static(path.resolve(__dirname,"assets/img")))
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 
 app.get('/',(req,res)=>{
-    res.send("Library Management System");
+    res.render('index');
 })
 
 app.listen(port,()=>{console.log(`Server is running on http://localhost:${port}`)});
