@@ -24,16 +24,7 @@ app.use('/css',express.static(path.resolve(__dirname,"assets/css")))
 app.use('/img',express.static(path.resolve(__dirname,"assets/img")))
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 
-app.get('/',(req,res)=>{
-    res.render('index');
-})
-
-app.get('/add-book',(req,res)=>{
-    res.render('add_book');
-})
-
-app.get('/update-book',(req,res)=>{
-    res.render('update_book');
-})
+//routers
+app.use('/',require('./server/routes/router'))
 
 app.listen(port,()=>{console.log(`Server is running on http://localhost:${port}`)});
