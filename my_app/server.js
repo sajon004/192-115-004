@@ -28,4 +28,12 @@ app.get('/',(req,res)=>{
     res.render('index');
 })
 
+app.get('/add-book',(req,res)=>{
+    res.render('add_book');
+})
+
+app.get('/update-book',(req,res)=>{
+    res.render('update_book');
+})
+
 app.listen(port,()=>{console.log(`Server is running on http://localhost:${port}`)});

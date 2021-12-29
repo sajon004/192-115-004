@@ -1,0 +1,35 @@
+<!--handling_form-->
+<form method="POST" id ="add_book">
+    <div class="new_book">
+        <div class="form-group">
+            <label for="name" class="text-light"> Book Name </label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="Book Name" value="" placeholder="Java Programming">
+
+        </div>
+        <div class="form-group">
+            <label for="writer-name" class="text-light"> Writer Name </label>
+            <input type="text" name="writer-name" value="" placeholder="Mr.Rahman">
+
+        </div>
+        <div class="form-group">
+            <label for="publisher-name" class="text-light"> Publisher Name </label>
+            <input type="text" name="writer-name" value="" placeholder="Dimik">
+
+        </div>
+        <div class="form-group">
+            <label for="Status" classs="text-light">Status</label>
+            <div class="radio-inline">
+                <input type="radio" id="radio-2" name="Status" value="Active">
+                <label for="radio-2" class="radio-label">Available</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" id="radio-3" name="Status" value="Inacive">
+                <label for="radio-3" class="radio-label">Unavailable</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update"> Save </button>
+        </div>
+    </div>
+</form>
